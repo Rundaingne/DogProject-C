@@ -1,5 +1,5 @@
 //
-//  EKKDog.h
+//  EKKSubBreed.h
 //  Dog-C
 //
 //  Created by Brooke Kumpunen on 3/27/19.
@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface EKKDog : NSObject
+@interface EKKSubBreed : NSObject
+
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSString *imageURL;
 
 @end
 

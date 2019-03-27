@@ -12,7 +12,8 @@
 		F73063AD224C1480007A58C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73063AC224C1480007A58C9 /* Assets.xcassets */; };
 		F73063B0224C1480007A58C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73063AE224C1480007A58C9 /* LaunchScreen.storyboard */; };
 		F73063B3224C1480007A58C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063B2224C1480007A58C9 /* main.m */; };
-		F73063BE224C14C3007A58C9 /* EKKDog.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063BD224C14C3007A58C9 /* EKKDog.m */; };
+		F73063C4224C1844007A58C9 /* EKKSubBreed.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063C3224C1844007A58C9 /* EKKSubBreed.m */; };
+		F735DECC224C20BD000CC6DC /* EKKBreed.m in Sources */ = {isa = PBXBuildFile; fileRef = F735DECB224C20BD000CC6DC /* EKKBreed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,10 @@
 		F73063AF224C1480007A58C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F73063B1224C1480007A58C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F73063B2224C1480007A58C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F73063BC224C14C3007A58C9 /* EKKDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKDog.h; sourceTree = "<group>"; };
-		F73063BD224C14C3007A58C9 /* EKKDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKDog.m; sourceTree = "<group>"; };
+		F73063C2224C1844007A58C9 /* EKKSubBreed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKSubBreed.h; sourceTree = "<group>"; };
+		F73063C3224C1844007A58C9 /* EKKSubBreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKSubBreed.m; sourceTree = "<group>"; };
+		F735DECA224C20BD000CC6DC /* EKKBreed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKBreed.h; sourceTree = "<group>"; };
+		F735DECB224C20BD000CC6DC /* EKKBreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKBreed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +92,10 @@
 		F73063BB224C14AE007A58C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F73063BC224C14C3007A58C9 /* EKKDog.h */,
-				F73063BD224C14C3007A58C9 /* EKKDog.m */,
+				F73063C2224C1844007A58C9 /* EKKSubBreed.h */,
+				F73063C3224C1844007A58C9 /* EKKSubBreed.m */,
+				F735DECA224C20BD000CC6DC /* EKKBreed.h */,
+				F735DECB224C20BD000CC6DC /* EKKBreed.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,8 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F73063B3224C1480007A58C9 /* main.m in Sources */,
-				F73063BE224C14C3007A58C9 /* EKKDog.m in Sources */,
 				F73063A5224C147E007A58C9 /* AppDelegate.m in Sources */,
+				F735DECC224C20BD000CC6DC /* EKKBreed.m in Sources */,
+				F73063C4224C1844007A58C9 /* EKKSubBreed.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
