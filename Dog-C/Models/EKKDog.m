@@ -1,15 +1,15 @@
 //
-//  ViewController.h
+//  EKKDog.m
 //  Dog-C
 //
 //  Created by Brooke Kumpunen on 3/27/19.
 //  Copyright © 2019 Rund LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "EKKDog.h"
 
-@interface ViewController : UIViewController
+@implementation EKKDog
+
 
 
 @end
-

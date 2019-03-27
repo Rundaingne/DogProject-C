@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F73063A5224C147E007A58C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063A4224C147E007A58C9 /* AppDelegate.m */; };
-		F73063A8224C147E007A58C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063A7224C147E007A58C9 /* ViewController.m */; };
 		F73063AB224C147E007A58C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73063A9224C147E007A58C9 /* Main.storyboard */; };
 		F73063AD224C1480007A58C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73063AC224C1480007A58C9 /* Assets.xcassets */; };
 		F73063B0224C1480007A58C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73063AE224C1480007A58C9 /* LaunchScreen.storyboard */; };
 		F73063B3224C1480007A58C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063B2224C1480007A58C9 /* main.m */; };
+		F73063BE224C14C3007A58C9 /* EKKDog.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063BD224C14C3007A58C9 /* EKKDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F73063A0224C147E007A58C9 /* Dog-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73063A3224C147E007A58C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F73063A4224C147E007A58C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F73063A6224C147E007A58C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F73063A7224C147E007A58C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F73063AA224C147E007A58C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F73063AC224C1480007A58C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73063AF224C1480007A58C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F73063B1224C1480007A58C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F73063B2224C1480007A58C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F73063BC224C14C3007A58C9 /* EKKDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKDog.h; sourceTree = "<group>"; };
+		F73063BD224C14C3007A58C9 /* EKKDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +58,41 @@
 		F73063A2224C147E007A58C9 /* Dog-C */ = {
 			isa = PBXGroup;
 			children = (
+				F73063BB224C14AE007A58C9 /* Models */,
+				F73063BA224C149D007A58C9 /* Storyboards */,
+				F73063B9224C148D007A58C9 /* Resources */,
+			);
+			path = "Dog-C";
+			sourceTree = "<group>";
+		};
+		F73063B9224C148D007A58C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F73063A3224C147E007A58C9 /* AppDelegate.h */,
 				F73063A4224C147E007A58C9 /* AppDelegate.m */,
-				F73063A6224C147E007A58C9 /* ViewController.h */,
-				F73063A7224C147E007A58C9 /* ViewController.m */,
-				F73063A9224C147E007A58C9 /* Main.storyboard */,
 				F73063AC224C1480007A58C9 /* Assets.xcassets */,
 				F73063AE224C1480007A58C9 /* LaunchScreen.storyboard */,
 				F73063B1224C1480007A58C9 /* Info.plist */,
 				F73063B2224C1480007A58C9 /* main.m */,
 			);
-			path = "Dog-C";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F73063BA224C149D007A58C9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F73063A9224C147E007A58C9 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F73063BB224C14AE007A58C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F73063BC224C14C3007A58C9 /* EKKDog.h */,
+				F73063BD224C14C3007A58C9 /* EKKDog.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73063A8224C147E007A58C9 /* ViewController.m in Sources */,
 				F73063B3224C1480007A58C9 /* main.m in Sources */,
+				F73063BE224C14C3007A58C9 /* EKKDog.m in Sources */,
 				F73063A5224C147E007A58C9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
