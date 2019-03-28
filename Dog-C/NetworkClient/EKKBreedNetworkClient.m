@@ -52,10 +52,15 @@
         NSMutableArray *breeds = [NSMutableArray new];
         for (NSString* key in messageDictionary) {
             NSLog(@"key=%@", key);
-            for (NSArray<NSString *> *value in messageDictionary) {
-                EKKBreed *breed = [[EKKBreed alloc] initWithName:key subBreeds:value imageURLs:[NSMutableArray new]];
-                [breeds addObject:breed];
+            NSMutableArray *subBreeds = [NSMutableArray new];
+            for (NSString *subBreedName in messageDictionary[key]) {
+                //Here, we want to initialize a subBreed.
+                EKKSubBreed *subBreed = [[EKKSubBreed alloc] initWithName:subBreedName imageURLs:[[NSMutableArray alloc] init]];
+                [subBreeds addObject:subBreed];
             }
+            //Now, create a Breed and add it to the array.
+            EKKBreed *breed = [[EKKBreed alloc] initWithName:key subBreeds:subBreeds imageURLs:[[NSMutableArray alloc] init]];
+            [breeds addObject:breed];
         }
         completion(breeds);
     }] resume];

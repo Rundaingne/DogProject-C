@@ -31,14 +31,18 @@
 
 #pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[self breeds] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"breedCell" forIndexPath:indexPath];
-    EKKBreed *breed = self.breeds[indexPath.row];
-    cell.textLabel.text = breed.name;
+    cell.textLabel.text = [[self.breeds[indexPath.row] name] capitalizedString];
     return cell;
 }
 
