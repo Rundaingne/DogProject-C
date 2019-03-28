@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface EKKSubBreed : NSObject
 
 @property (nonatomic, readonly) NSString *name;
-@property (nonatomic, readonly) NSString *imageURL;
+@property (nonatomic, readonly) NSArray<NSString *> *imageURLs;
+
+-(instancetype)initWithName:(NSString *)name imageURLs:(NSArray<NSString *> *)imageURLs;
 
 @end
 

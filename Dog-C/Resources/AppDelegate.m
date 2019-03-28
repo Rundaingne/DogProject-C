@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EKKBreedNetworkClient.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [EKKBreedNetworkClient fetchAllBreeds:^(NSArray<EKKBreed *> *breed) {
+        
+    }];
     return YES;
 }
 

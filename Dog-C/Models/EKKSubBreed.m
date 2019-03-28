@@ -10,6 +10,14 @@
 
 @implementation EKKSubBreed
 
-
+- (instancetype)initWithName:(NSString *)name imageURLs:(NSArray<NSString *> *)imageURLs
+{
+    self = [super init];
+    if(self) {
+        _name = name;
+        _imageURLs = imageURLs;
+    }
+    return self;
+}
 
 @end

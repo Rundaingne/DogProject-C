@@ -14,6 +14,7 @@
 		F73063B3224C1480007A58C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063B2224C1480007A58C9 /* main.m */; };
 		F73063C4224C1844007A58C9 /* EKKSubBreed.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063C3224C1844007A58C9 /* EKKSubBreed.m */; };
 		F735DECC224C20BD000CC6DC /* EKKBreed.m in Sources */ = {isa = PBXBuildFile; fileRef = F735DECB224C20BD000CC6DC /* EKKBreed.m */; };
+		F735DECF224C23B3000CC6DC /* EKKBreedNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F735DECE224C23B3000CC6DC /* EKKBreedNetworkClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		F73063C3224C1844007A58C9 /* EKKSubBreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKSubBreed.m; sourceTree = "<group>"; };
 		F735DECA224C20BD000CC6DC /* EKKBreed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKBreed.h; sourceTree = "<group>"; };
 		F735DECB224C20BD000CC6DC /* EKKBreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKBreed.m; sourceTree = "<group>"; };
+		F735DECD224C23B3000CC6DC /* EKKBreedNetworkClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKBreedNetworkClient.h; sourceTree = "<group>"; };
+		F735DECE224C23B3000CC6DC /* EKKBreedNetworkClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKBreedNetworkClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 				F73063BB224C14AE007A58C9 /* Models */,
 				F73063BA224C149D007A58C9 /* Storyboards */,
 				F73063B9224C148D007A58C9 /* Resources */,
+				F735DED0224C23B8000CC6DC /* NetworkClient */,
 			);
 			path = "Dog-C";
 			sourceTree = "<group>";
@@ -98,6 +102,15 @@
 				F735DECB224C20BD000CC6DC /* EKKBreed.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F735DED0224C23B8000CC6DC /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				F735DECD224C23B3000CC6DC /* EKKBreedNetworkClient.h */,
+				F735DECE224C23B3000CC6DC /* EKKBreedNetworkClient.m */,
+			);
+			path = NetworkClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F735DECF224C23B3000CC6DC /* EKKBreedNetworkClient.m in Sources */,
 				F73063B3224C1480007A58C9 /* main.m in Sources */,
 				F73063A5224C147E007A58C9 /* AppDelegate.m in Sources */,
 				F735DECC224C20BD000CC6DC /* EKKBreed.m in Sources */,
@@ -317,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
-				INFOPLIST_FILE = "Dog-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Dog-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
-				INFOPLIST_FILE = "Dog-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Dog-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
