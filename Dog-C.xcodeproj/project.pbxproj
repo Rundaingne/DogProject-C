@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F711257E224D5F2D0074223B /* EKKBreedsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F711257D224D5F2D0074223B /* EKKBreedsListTableViewController.m */; };
+		F7112581224D5FA20074223B /* EKKSubBreedsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7112580224D5FA20074223B /* EKKSubBreedsListTableViewController.m */; };
+		F7112584224D5FD00074223B /* EKKDogsImagesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7112583224D5FD00074223B /* EKKDogsImagesCollectionViewController.m */; };
 		F73063A5224C147E007A58C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F73063A4224C147E007A58C9 /* AppDelegate.m */; };
 		F73063AB224C147E007A58C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73063A9224C147E007A58C9 /* Main.storyboard */; };
 		F73063AD224C1480007A58C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73063AC224C1480007A58C9 /* Assets.xcassets */; };
@@ -18,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F711257C224D5F2D0074223B /* EKKBreedsListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKBreedsListTableViewController.h; sourceTree = "<group>"; };
+		F711257D224D5F2D0074223B /* EKKBreedsListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKBreedsListTableViewController.m; sourceTree = "<group>"; };
+		F711257F224D5FA20074223B /* EKKSubBreedsListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKSubBreedsListTableViewController.h; sourceTree = "<group>"; };
+		F7112580224D5FA20074223B /* EKKSubBreedsListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKSubBreedsListTableViewController.m; sourceTree = "<group>"; };
+		F7112582224D5FD00074223B /* EKKDogsImagesCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKDogsImagesCollectionViewController.h; sourceTree = "<group>"; };
+		F7112583224D5FD00074223B /* EKKDogsImagesCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKDogsImagesCollectionViewController.m; sourceTree = "<group>"; };
 		F73063A0224C147E007A58C9 /* Dog-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73063A3224C147E007A58C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F73063A4224C147E007A58C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +54,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F711257B224D58AB0074223B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F711257C224D5F2D0074223B /* EKKBreedsListTableViewController.h */,
+				F711257D224D5F2D0074223B /* EKKBreedsListTableViewController.m */,
+				F711257F224D5FA20074223B /* EKKSubBreedsListTableViewController.h */,
+				F7112580224D5FA20074223B /* EKKSubBreedsListTableViewController.m */,
+				F7112582224D5FD00074223B /* EKKDogsImagesCollectionViewController.h */,
+				F7112583224D5FD00074223B /* EKKDogsImagesCollectionViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		F7306397224C147E007A58C9 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +86,7 @@
 		F73063A2224C147E007A58C9 /* Dog-C */ = {
 			isa = PBXGroup;
 			children = (
+				F711257B224D58AB0074223B /* ViewController */,
 				F73063BB224C14AE007A58C9 /* Models */,
 				F73063BA224C149D007A58C9 /* Storyboards */,
 				F73063B9224C148D007A58C9 /* Resources */,
@@ -183,11 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F711257E224D5F2D0074223B /* EKKBreedsListTableViewController.m in Sources */,
 				F735DECF224C23B3000CC6DC /* EKKBreedNetworkClient.m in Sources */,
 				F73063B3224C1480007A58C9 /* main.m in Sources */,
+				F7112584224D5FD00074223B /* EKKDogsImagesCollectionViewController.m in Sources */,
 				F73063A5224C147E007A58C9 /* AppDelegate.m in Sources */,
 				F735DECC224C20BD000CC6DC /* EKKBreed.m in Sources */,
 				F73063C4224C1844007A58C9 /* EKKSubBreed.m in Sources */,
+				F7112581224D5FA20074223B /* EKKSubBreedsListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

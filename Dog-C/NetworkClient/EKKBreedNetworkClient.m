@@ -61,9 +61,21 @@
     }] resume];
 }
 
-+ (void)fetchImageDataFrom:(NSURL *)imageURL completion:(void (^)(NSData * _Nonnull))completion
++ (void)fetchImageDataFrom:(NSURL *)imageURL completion:(void (^)(NSData *imageData))completion
 {
-    
+    [[[NSURLSession sharedSession] dataTaskWithURL:imageURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"There was an error in %s: %@, %@", __PRETTY_FUNCTION__, error, error.localizedDescription);
+            completion(nil);
+            return;
+        }
+            if (!data) {
+                NSLog(@"No data available");
+                completion(nil);
+                return;
+        }
+        completion(data);
+    }] resume];
 }
 
 + (void)fetchBreedImageURLsForBreed:(EKKBreed *)breed completion:(void (^)(NSArray<NSString *> * _Nonnull))completion

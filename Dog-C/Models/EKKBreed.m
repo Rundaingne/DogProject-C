@@ -10,7 +10,7 @@
 
 @implementation EKKBreed
 
-- (instancetype)initWithName:(NSString *)name subBreeds:(NSArray<NSString *> *)subBreeds imageURLs:(NSArray<NSString *> *)imageURLs
+- (instancetype)initWithName:(NSString *)name subBreeds:(NSArray *)subBreeds imageURLs:(NSArray<NSString *> *)imageURLs
 {
     self = [super init];
     if(self) {
